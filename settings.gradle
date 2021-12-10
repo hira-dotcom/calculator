@@ -1,2 +1,3 @@
 rootProject.name = "CalculatorLibray"
 include ':app'
+include ':calculator'
