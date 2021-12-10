@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.calClass;
 import com.example.calculator.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
         btn_sum = findViewById(R.id.sum);
         ed1 = findViewById(R.id.val1);
         ed2 = findViewById(R.id.val2);
-
-
         btn_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 v1 = Integer.parseInt(ed1.getText().toString());
                 v2 = Integer.parseInt(ed2.getText().toString());
-                int result = calClass.add(MainActivity.this,v1,v2);
+                int result = v1+v2;
                 Toast.makeText(MainActivity.this, "result "+result, Toast.LENGTH_SHORT).show();
             }
         });
