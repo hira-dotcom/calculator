@@ -20,16 +20,16 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn_sum = findViewById(R.id.sum);
-
         btn_sum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ed1 = findViewById(R.id.val1);
                 ed2 = findViewById(R.id.val2);
-                v1 = Double.parseDouble(ed1.getText().toString());
-                v2 = Double.parseDouble(ed2.getText().toString());
+                v1 = Double.valueOf(ed1.getText().toString());
+                v2 = Double.valueOf(ed2.getText().toString());
                 Double result = v1+v2;
                 Toast.makeText(AddActivity.this, "result "+result, Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
