@@ -3,7 +3,7 @@
     package="com.example.calculator">
 
     <application>
-        <activity android:name="com.example.MainActivity"></activity>
+        <activity android:name="com.example.AddActivity"></activity>
     </application>
 
 </manifest>

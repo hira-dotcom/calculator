@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.calculator.R;
 
-public class MainActivity extends AppCompatActivity {
+public class AddActivity extends AppCompatActivity {
 
     Button btn_sum ;
     EditText ed1,ed2;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 v1 = Integer.parseInt(ed1.getText().toString());
                 v2 = Integer.parseInt(ed2.getText().toString());
                 int result = v1+v2;
-                Toast.makeText(MainActivity.this, "result "+result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddActivity.this, "result "+result, Toast.LENGTH_SHORT).show();
             }
         });
     }
