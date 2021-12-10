@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.calculator">
 
-    <application></application>
+    <application>
+        <activity android:name="com.example.MainActivity"></activity>
+    </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.calculatorlibray;
+package com.example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.calClass;
+import com.example.calculator.R;
 
 public class MainActivity extends AppCompatActivity {
+
     Button btn_sum ;
     EditText ed1,ed2;
     int v1,v2;
